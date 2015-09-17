@@ -1,0 +1,238 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600");
+/*
+@import 'modules/colors';
+@import 'modules/_fonts';
+@import 'modules/base';
+
+  
+  @import 'modules/button';
+  @import 'modules/icons';
+
+  @import 'modules/typography';
+  @import 'modules/stage';
+  @import 'modules/list';
+  @import 'modules/block';
+  @import 'modules/menu';
+  @import 'modules/footer';
+  @import 'modules/sidebar';
+
+  @import 'modules/accordeon';
+  @import 'modules/education';
+  @import 'modules/educationdetail';
+  @import 'modules/breadcrumbs';
+  @import 'modules/rateplan';
+  @import 'modules/checkout';
+  @import 'modules/spacing';
+
+
+ 
+ 
+ @import 'modules/modal';
+@import 'modules/usermodal';
+ 
+
+@import 'modules/legacy'; */
+/* -- custom css for Bootstrap 3.x --*/
+/* move special fonts to HTML head for better performance */
+/* line 6, ../scss/modules/_theme.scss */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/* fix bs3 horizontal scrollbar bug */
+/* line 13, ../scss/modules/_theme.scss */
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 15, ../scss/modules/_theme.scss */
+h1 {
+  font-size: 45px;
+}
+
+/* line 19, ../scss/modules/_theme.scss */
+img.grayscale {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 10+, Firefox on Android */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(100%);
+  /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+}
+
+/* line 25, ../scss/modules/_theme.scss */
+.icon-bar {
+  background-color: #fff;
+}
+
+/* line 29, ../scss/modules/_theme.scss */
+.scroll-down a, .scroll-top a {
+  color: #ffffff;
+}
+
+/* line 33, ../scss/modules/_theme.scss */
+.scroll-down {
+  position: fixed;
+  bottom: 20%;
+  right: 0%;
+  color: #f9f9f9;
+}
+
+/* line 40, ../scss/modules/_theme.scss */
+.scroll-top {
+  background-color: #33ee67;
+}
+
+/* line 44, ../scss/modules/_theme.scss */
+.header .btn-lg {
+  font-size: 28px;
+  border-color: #eeeeee;
+  padding: 15px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+/* line 52, ../scss/modules/_theme.scss */
+.header .btn-lg:hover {
+  background-color: #eeeeee;
+  color: #777777;
+}
+
+/* line 57, ../scss/modules/_theme.scss */
+.navbar a {
+  color: #fff;
+}
+
+/* line 61, ../scss/modules/_theme.scss */
+.navbar-bold.affix {
+  background-color: #33ee67;
+}
+
+/* line 65, ../scss/modules/_theme.scss */
+.navbar-bold {
+  background-color: #11cc45;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/* line 70, ../scss/modules/_theme.scss */
+.navbar-bold li a:hover, .navbar-bold li.active {
+  background-color: #22dd56;
+}
+
+/* line 74, ../scss/modules/_theme.scss */
+.vert {
+  vertical-align: middle;
+  width: 100%;
+  padding-top: 4%;
+}
+
+/* line 80, ../scss/modules/_theme.scss */
+.header h1 {
+  font-size: 110px;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  color: #431a6d;
+  color: #fff;
+  margin-left: -5px;
+  margin-bottom: 5px;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/* line 90, ../scss/modules/_theme.scss */
+.header .lead {
+  color: #eeeeee;
+  font-size: 25px;
+}
+
+/* line 95, ../scss/modules/_theme.scss */
+.header {
+  height: 80%;
+  background: #11cc45 url("http://www.bootply.com/assets/example/pt_squares_lg.png") repeat center center fixed;
+}
+
+/* line 100, ../scss/modules/_theme.scss */
+.blurb {
+  padding: 120px 0;
+  background-color: #fefefe;
+}
+
+/* line 105, ../scss/modules/_theme.scss */
+.blurb .panel {
+  background-color: transparent;
+}
+
+/* line 109, ../scss/modules/_theme.scss */
+.bright {
+  background: #7fbbda url("http://www.bootply.com/assets/example/bg_suburb.jpg") no-repeat center center fixed;
+  color: #fff;
+}
+
+/* line 114, ../scss/modules/_theme.scss */
+.featurette {
+  background: #545455;
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+/* line 120, ../scss/modules/_theme.scss */
+.featurette-item {
+  margin-bottom: 15px;
+}
+
+/* line 124, ../scss/modules/_theme.scss */
+.featurette-item > i {
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 56px;
+  width: 140px;
+  height: 140px;
+  line-height: 136px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+/* line 136, ../scss/modules/_theme.scss */
+.featurette-item > i:hover {
+  font-size: 68px;
+}
+
+/* line 140, ../scss/modules/_theme.scss */
+.callout {
+  color: #ffffff;
+  padding-top: 7%;
+  height: 100%;
+  width: 100%;
+  background: url("http://www.bootply.com/assets/example/bg_suburb.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 152, ../scss/modules/_theme.scss */
+.gallery {
+  padding: 50px 0;
+}
+
+/* line 156, ../scss/modules/_theme.scss */
+.call-to-action {
+  background: #eeeeee;
+  padding: 50px 0;
+}
+
+/* line 161, ../scss/modules/_theme.scss */
+.call-to-action .btn {
+  margin: 10px;
+}
+
+/* line 165, ../scss/modules/_theme.scss */
+footer {
+  padding: 100px 0;
+}
+
+/* -- end custom css for Bootstrap 3.x --*/
