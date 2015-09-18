@@ -1,4 +1,37 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600");
+/*
+@mixin OpenSansRegular {
+  font-family: "OpenSansRegular", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin OpenSansLight {
+  font-family: "OpenSansLight", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin OpenSansSemibold {
+  font-family: "OpenSansSemibold", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin OpenSansBold {
+  font-family: "OpenSansBold", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin IvaIcon {
+  font-family: 'IvaIcon';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+*/
 /* move special fonts to HTML head for better performance */
 /* line 5, ../scss/modules/_theme.scss */
 html,
@@ -201,3 +234,17 @@ footer {
 }
 
 /* -- end custom css for Bootstrap 3.x --*/
+/* line 4, ../scss/components/_content.scss */
+.featurette-item i, .featurette-item a {
+  text-transform: none;
+  color: white;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* line 12, ../scss/components/_content.scss */
+.img-angular {
+  width: 50%;
+  display: inherit;
+  margin: auto;
+}
