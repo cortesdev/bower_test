@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" ng-app=""><!--NG APP ANGULAR-->
+<head>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Angular JS | Hands On</title>
+
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!-- ANGULAR -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+
+
+</head>
+<body>
+
+	<div class="navbar navbar-fixed-top navbar-bold" data-spy="affix" data-offset-top="1000">
+	  <div class="container">
+	    <div class="navbar-header">
+	      <a href="#" class="navbar-brand">Home</a>
+	      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </a>
+	    </div>
+	    <div class="navbar-collapse collapse" id="navbar">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#sec1">Section 1</a></li>
+	        <li><a href="#sec2">Section 2</a></li>
+	        <li><a href="#sec3">Section 3</a></li>
+	        <li><a href="#sec4">Section 4</a></li>
+	      </ul>
+	    </div>
+	   </div>
+	</div>
+
+	<div class="header vert">
+	  <div class="container">
+
+	    <h1>Hello {{name}}</h1>
+	  	<!--NG MODEL ANGULAR-->
+    	<input type="text" ng-model="name"></input>	    
+	      <p class="lead">Bold Green Starter Template for Bootstrap</p>
+	      <div>&nbsp;</div>
+	      <a href="#" class="btn btn-default btn-lg">Get Started</a>
+	  </div>
+	</div>
+
+	<div id="sec1" class="blurb">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-12 text-center">
+	        <h1>The Simplicity of Bootstrap</h1>
+	        <p class="lead">The Most Popular Responsive Framework</p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="featurette" id="sec2">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-12 text-center">
+	        <h1>Amazing Features</h1>
+	      </div>
+	    </div>
+	    <div class="row">
+	      <div class="col-md-2 col-md-offset-2 text-center">
+	        <div class="featurette-item">
+	          <i class="icon-rocket"></i>
+	          <h4>Rocket</h4>
+	          <p>Up-up-and-away with this starter template.</p>
+	        </div>
+	      </div>
+	      <div class="col-md-2 text-center">
+	        <div class="featurette-item">
+	          <i class="icon-magnet"></i>
+	          <h4>Magnet</h4>
+	          <p>For you are a magnet and I am steel.</p>
+	        </div>
+	      </div>
+	      <div class="col-md-2 text-center">
+	        <div class="featurette-item">
+	          <i class="icon-shield"></i>
+	          <h4>Shield</h4>
+	          <p>Protect yourself. Don't design like it's 1999.</p>
+	        </div>
+	      </div>
+	      <div class="col-md-2 text-center">
+	        <div class="featurette-item">
+	          <i class="icon-pencil"></i>
+	          <h4>Scholar</h4>
+	          <p>Because lead pencils are pretty smart looking.</p>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+ 
+	
+	<div class="blurb" id="sec4">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-12 text-center">
+	        <h1>Is That An iPhone?</h1>
+	        <img src="/assets/example/bg_smartphones.jpg" class="img-responsive">
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+<!---->
+
+	<div class="blurb">
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-6 col-md-offset-3 text-center">
+	        <h2>Sharing the Bootstrap Love</h2>
+	        <p class="lead"><a href="http://bootply.com/85657"><strong>Download this Template</strong></a><br><small><a href="http://bootply.com/templates" target="ext">More Bootstrap Templates</a></small></p>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+	<footer>
+	  <div class="container">
+	    <div class="row">
+	      <div class="col-md-6 col-md-offset-3 text-center">
+	        <ul class="list-inline">
+	          <li><i class="icon-facebook icon-2x"></i></li>
+	          <li><i class="icon-twitter icon-2x"></i></li>
+	          <li><i class="icon-google-plus icon-2x"></i></li>
+	          <li><i class="icon-pinterest icon-2x"></i></li>
+	        </ul>
+	        <hr>
+	        <p>Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a>.<br>Company ©2013</p>
+	      </div>
+	    </div>
+	  </div>
+	</footer>
+
+	<ul class="nav pull-right scroll-down">
+	  <li><a href="#" title="Scroll down"><i class="icon-chevron-down icon-3x"></i></a></li>
+	</ul>
+	<ul class="nav pull-right scroll-top">
+	  <li><a href="#" title="Scroll to top"><i class="icon-chevron-up icon-3x"></i></a></li>
+	</ul>
+
+<script type="text/javascript">
+/* smooth scrolling for scroll to top */
+$('.scroll-top').click(function(){
+  $('body,html').animate({scrollTop:0},1000);
+})
+/* smooth scrolling for scroll down */
+$('.scroll-down').click(function(){
+  $('body,html').animate({scrollTop:$(window).scrollTop()+800},1000);
+})
+
+/* highlight the top nav as scrolling occurs */
+$('body').scrollspy({ target: '#navbar' })
+</script>
+
+<!--/* <script type="bower_components/underscore/underscore.js"></script>
+<script type="bower_components/backbone/backbone.js"></script>-->
+<script type="bower_components/modernizr/modernizr.js"></script>
+
+</body>
+</html>
